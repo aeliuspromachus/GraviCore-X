@@ -1,0 +1,27 @@
+# Einstein Toolkit parameter file for localized exotic matter pulse
+
+ActiveThorns = "
+  ADMBase
+  Carpet
+  ML_BSSN
+  MoL
+  IOUtil
+"
+
+ADMBase::initial_data = "gaussian_pulse"
+ADMBase::gaussian_amp = 0.01
+ADMBase::gaussian_sigma = 2.0
+ADMBase::gaussian_x0 = 0.0
+ADMBase::gaussian_y0 = 0.0
+ADMBase::gaussian_z0 = 0.0
+
+Carpet::domain_size = "minmax"
+Carpet::xmin = -10
+Carpet::xmax = 10
+Carpet::ymin = -10
+Carpet::ymax = 10
+Carpet::zmin = -10
+Carpet::zmax = 10
+Carpet::max_refinement_levels = 2
+
+IO::out_every = 10
